@@ -18,6 +18,12 @@ body {
 	border-radius: 30px;
 }
 
+.hidden {
+	display: none;
+}
+
+/* RATING PAGE */
+
 .starContainer {
 	display: flex;
 	align-items: center;
@@ -133,6 +139,40 @@ p {
 	left: 40%;
 }
 
+/* THANKS PAGE */
+
+.thanksPage {
+	text-align: center;
+}
+
+.imgContainer {
+	margin: 1rem 0rem 2rem 0rem;
+}
+
+.voteResult {
+	color: var(--Orange);
+	font-weight: 400;
+	background-color: var(--DarkBlue);
+	padding: 0.6rem;
+	width: 55%;
+	border-radius: 25px;
+	margin: auto;
+	margin-bottom: 2.3rem;
+}
+
+h1 {
+	color: var(--White);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.thanksParagraph {
+	color: var(--MediumGrey);
+	line-height: 140%;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	font-size: 0.97rem;
+}
 
 @media (max-width: 28rem) {
 	.mainContainer {
@@ -174,9 +214,34 @@ p {
 		padding: 0.3rem;
 		left: 45%;
 		top: 51%;
-}
+	}
 
 	.submitWarning::before {
 		top: 17px;
+	}
+
+	.imgContainer {
+		margin-bottom: 1.4rem;
+	}
+
+	.voteResult {
+		width: 62%;
+		margin-bottom: 1.85rem;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+	}
+
+	.thanksParagraph {
+		font-size: 0.93rem;
+		margin-bottom: 1.15rem;
+	}
+}
+
+@media (max-width: 370px) {
+	.voteResult {
+		width: 85%;
 	}
 }
