@@ -1,0 +1,81 @@
+@import './reset.css';
+@import './variables.css';
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: var(--VeryDarkBlue);
+	font-family: var(--Font);
+	font-weight: 700;
+}
+
+.mainContainer {
+	background: radial-gradient(circle at top, var(--DarkBlue), var(--VeryDarkBlue) 140%);
+	max-width: 26rem;
+	padding: 2rem;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.imgContainer {
+	margin: 1rem 0rem 2rem 0rem;
+}
+
+.voteResult {
+	color: var(--Orange);
+	font-weight: 400;
+	background-color: var(--DarkBlue);
+	padding: 0.6rem;
+	width: 55%;
+	border-radius: 25px;
+	margin: auto;
+	margin-bottom: 2.45rem;
+}
+
+h1 {
+	color: var(--White);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.thanksParagraph {
+	color: var(--MediumGrey);
+	line-height: 140%;
+	margin-bottom: 1.3rem;
+	font-weight: 400;
+	font-size: 0.97rem;
+}
+
+@media (max-width: 28rem) {
+	.mainContainer {
+		width: 90%;
+		padding: 1.5rem;
+	}
+
+	.imgContainer {
+		margin-bottom: 1.5rem;
+	}
+
+	.voteResult {
+		width: 62%;
+		margin-bottom: 2rem;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		margin-bottom: 1.1rem;
+	}
+
+	.thanksParagraph {
+		font-size: 0.94rem;
+		margin-bottom: 1.15rem;
+	}
+}
+
+@media (max-width: 370px) {
+	.voteResult {
+		width: 85%;
+	}
+}

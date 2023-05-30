@@ -4,9 +4,34 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Frontend Mentor | Interactive Rating Component</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="preload" href="./css/index.css" as="style">
+	<link rel="preload" href="./js/index.js" as="script">
+	<link rel="stylesheet" href="./css/index.css">
+	<title>Frontend Mentor | Interactive Rating Component Vote Page</title>
 </head>
 <body>
-	
+	<main class="mainContainer">
+		<div class="starContainer">
+			<img class ="starImg" src="./public/icon-star.svg" alt="">
+		</div>
+
+		<h1>How did we do?</h1>
+		<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+		<form class="formContainer" action="./results.html" target="_self" id="formContainer">
+			<button type="button" name="ratingBtn">1</button>
+			<button type="button" name="ratingBtn">2</button>
+			<button type="button" name="ratingBtn">3</button>
+			<button type="button" name="ratingBtn">4</button>
+			<button type="button" name="ratingBtn">5</button>
+			<dialog class="submitWarning" id="dialog">You must select a value</dialog>
+		</form>
+
+		<button class="btnSubmit" type="submit" form="formContainer">Submit</button>
+		
+		
+		<script src="./js/index.js"></script>
+	</main>
 </body>
 </html>
