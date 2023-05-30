@@ -78,7 +78,7 @@ p {
 	color: var(--White);
 }
 
-.formContainer .selected {
+.formContainer button.selected {
 	background-color: var(--Orange);
 	color: var(--White);
 }

@@ -8,7 +8,7 @@ const markRating = (e) => {
 		rating = '';
 	});
 	
-	e.target.className = 'selected';
+	e.target.classList.add('selected');
 	rating = e.target.innerText;
 	dialog.close();
 };
